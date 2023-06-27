@@ -1,0 +1,27 @@
+.imagen{
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-image: url(img/imagen.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+.imagen:hover::after{
+    transform: translateY(0);
+}
+.imagen::after{
+    content: "soy un overlay";
+    font-size: 2rem;
+    color: white;
+    background-color: #16456198;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+}

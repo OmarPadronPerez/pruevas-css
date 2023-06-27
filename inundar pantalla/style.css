@@ -1,0 +1,23 @@
+p{
+    margin: 30px auto;
+    padding: 1rem 2rem;
+    width: max-content;
+    background-color: red;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.fondo{
+    position: absolute;
+    inset: 0;
+    background-color: #3c3c3c;
+    z-index: -1;
+    clip-path: circle(0 at 0 0);
+    transition: clip-path .5s;
+}
+.boton:hover + .fondo{
+    clip-path: circle(150% at 0 0);
+
+}
